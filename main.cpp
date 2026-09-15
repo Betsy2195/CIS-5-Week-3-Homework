@@ -1,36 +1,66 @@
 #include <iostream>
 #include <string>
 
-// Homework 3 — Your Name
+// Homework 3 — Betsy Caudel
 // CIS 5 Week 03 · Types & variables
+
+using std::cout;
+using std::string;
+using std::endl;
 
 int main() {
   const int CURRENT_YEAR = 2026;
 
-  // TODO: Lab 3 boxes — initialize on the same line
-  // std::string name = ...;
-  // int age = ...;
-  // double height_m = ...;
-  // char initial = ...;
-  // bool student = ...;
+  // String
+  string name = "Betsy";
 
-  // TODO: two more from this week's menu
-  // int credits = ...;
-  // double gpa = ...;
+  //Integer
+  int age = 17;
 
-  // TODO: a comment that explains a type choice (why int, why double, or why const)
+  //Double
+  double height_m = 1.55;
+
+  //Character
+  char initial = 'B';
+
+  //Boolean
+  bool student = true;
+
+  //Integer
+  int credits = 11;
+
+  //Double
+  double gpa = 4.0;
+
+  //int was chosen for credits because the amount will always be a whole number.
+  //const was placed for CURRENT_YEAR because the year is the same for the entire
+  //time of this class.
 
   std::cout << "=== About me ===\n";
-  // TODO: labeled lines from the names
-  // TODO: one short paragraph from those same names — not leftover quotes
+  // Prints what variable is and the variable as well as the current year.
+  cout << "Name: " << name << endl;
+  cout << "Age: " << age << endl;
+  cout << "Height (m): " << height_m << endl;
+  cout << "Initial: " << initial << endl;
+  cout << "Student: " << student << endl;
+  cout << "Credits: " << credits << endl;
+  cout << "GPA: " << gpa << endl;
+  cout << "Year: " << CURRENT_YEAR << endl;
 
-  // TODO: change one value from a first choice. Comment the old value,
-  // the new value, and why the console followed.
+  // Prints a sentence using the information above.
+  cout << name << " is " << age << " years old, " << height_m << " meters tall, taking " << credits << " credits, and has a GPA of " << gpa << "." << endl;
+  cout << endl;
+  //old value = 17, new value = 16
+  //The console changed the value because it now stores the int 16 in
+  //age rather than 17, so the next time it prints age, 16 will print.
+  age = 16;
+  
+  // prints new value
+  cout << "Age: " << age << endl;
 
-  // TODO: two lines that would not compile — leave them commented
-  // Example shape (write your own, with the reason):
-  // int age = "nineteen";   // would not compile — ...
-  // CURRENT_YEAR = 2027;    // would not compile — ...
+  //two commented lines that would not compile
+  // age = "seventeen"; //Would not compile because a string in is place of int.
+  initial = "B"; //Would not compile because of double quotation marks - means it is a string.
 
   return 0;
 }
