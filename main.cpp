@@ -60,7 +60,7 @@ int main() {
 
   //two commented lines that would not compile
   // age = "seventeen"; //Would not compile because a string in is place of int.
-  initial = "B"; //Would not compile because of double quotation marks - means it is a string.
+  //initial = "B"; //Would not compile because of double quotation marks - means it is a string.
 
   return 0;
 }
